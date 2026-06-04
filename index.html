@@ -260,7 +260,6 @@ footer{text-align:center;padding:2rem;font-size:.7rem;color:#a89e94;letter-spaci
   <nav class="tab-nav" style="max-width:560px">
     <button class="tab-btn active" data-tab="materials">📚 Materials</button>
     <button class="tab-btn" data-tab="ielts-vocab">🗂️ IELTS Vocabulary</button>
-    <button class="tab-btn" data-tab="vocabulary">📖 My Vocabulary</button>
   </nav>
 </header>
 
@@ -272,7 +271,7 @@ footer{text-align:center;padding:2rem;font-size:.7rem;color:#a89e94;letter-spaci
 <div class="tab-page" id="tab-ielts-vocab">
   <div class="materials-page">
     <div class="materials-header"><h2>IELTS <span>Vocabulary</span></h2></div>
-    <a class="card rose" href="https://drive.google.com/drive/folders/1Z9nNCXu6uJXhhjs2u_J3wDk-gxBiHZw5" target="_blank" rel="noopener"
+    <a href="https://drive.google.com/drive/folders/1Z9nNCXu6uJXhhjs2u_J3wDk-gxBiHZw5" target="_blank" rel="noopener"
        style="display:flex;align-items:center;gap:1.2rem;text-decoration:none;color:inherit;background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:1.4rem 1.8rem;margin-bottom:1rem;box-shadow:0 2px 10px var(--shadow);transition:transform .2s,box-shadow .2s;"
        onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 24px var(--shadow)'"
        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 10px var(--shadow)'">
@@ -280,56 +279,25 @@ footer{text-align:center;padding:2rem;font-size:.7rem;color:#a89e94;letter-spaci
       <div>
         <div style="font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);margin-bottom:.3rem;">Google Drive Folder</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:.3rem;">IELTS Vocabulary</h3>
-        <p style="font-size:.82rem;color:var(--muted);line-height:1.5;margin:0;">Vocabulary sheets, word lists, and reference files for your IELTS preparation.</p>
+        <p style="font-size:.82rem;color:var(--muted);line-height:1.5;margin:0;">Vocabulary sheets, word lists, and reference files.</p>
+      </div>
+      <span style="margin-left:auto;font-size:1.1rem;color:var(--rose);">→</span>
+    </a>
+    <a href="https://drive.google.com/drive/folders/1RBCRwWE40bZ74e-YtfE4c0x2ypFBAwwR?usp=drive_link" target="_blank" rel="noopener"
+       style="display:flex;align-items:center;gap:1.2rem;text-decoration:none;color:inherit;background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:1.4rem 1.8rem;margin-bottom:1rem;box-shadow:0 2px 10px var(--shadow);transition:transform .2s,box-shadow .2s;"
+       onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 24px var(--shadow)'"
+       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 10px var(--shadow)'">
+      <span style="font-size:2.4rem;">📂</span>
+      <div>
+        <div style="font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);margin-bottom:.3rem;">Google Drive Folder</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:.3rem;">IELTS Vocabulary 2</h3>
+        <p style="font-size:.82rem;color:var(--muted);line-height:1.5;margin:0;">Additional vocabulary materials and resources.</p>
       </div>
       <span style="margin-left:auto;font-size:1.1rem;color:var(--rose);">→</span>
     </a>
   </div>
 </div><!-- /tab-ielts-vocab -->
 
-<!-- ══════════════════════════════════════ -->
-<!-- VOCABULARY TAB -->
-<!-- ══════════════════════════════════════ -->
-<div class="tab-page" id="tab-vocabulary">
-  <div class="materials-page">
-    <div class="materials-header">
-      <h2>My <span>Vocabulary</span></h2>
-    </div>
-
-    <div style="background:var(--paper);border:1px solid var(--border);border-radius:5px;padding:1.4rem 1.5rem;margin-bottom:1rem;">
-      <div class="unit-notes-label" style="margin-bottom:.5rem">📖 Word list</div>
-      <table class="vocab-table" style="background:var(--cream);">
-        <thead>
-          <tr><th>Word / Phrase</th><th>Translation / Meaning</th></tr>
-        </thead>
-        <tbody id="vocab-main-tbody">
-          <tr><td><input placeholder="word…" id="vocab-w-1" oninput="saveAll()"></td><td><input placeholder="translation…" id="vocab-t-1" oninput="saveAll()"></td></tr>
-          <tr><td><input placeholder="word…" id="vocab-w-2" oninput="saveAll()"></td><td><input placeholder="translation…" id="vocab-t-2" oninput="saveAll()"></td></tr>
-          <tr><td><input placeholder="word…" id="vocab-w-3" oninput="saveAll()"></td><td><input placeholder="translation…" id="vocab-t-3" oninput="saveAll()"></td></tr>
-          <tr><td><input placeholder="word…" id="vocab-w-4" oninput="saveAll()"></td><td><input placeholder="translation…" id="vocab-t-4" oninput="saveAll()"></td></tr>
-          <tr><td><input placeholder="word…" id="vocab-w-5" oninput="saveAll()"></td><td><input placeholder="translation…" id="vocab-t-5" oninput="saveAll()"></td></tr>
-        </tbody>
-      </table>
-      <button class="btn-add-vocab-row" onclick="addVocabRow('vocab-main-tbody')">＋ Add row</button>
-    </div>
-
-    <div style="background:var(--paper);border:1px solid var(--border);border-radius:5px;padding:1.4rem 1.5rem;margin-bottom:1rem;">
-      <div class="unit-notes-label" style="margin-bottom:.5rem">📝 Notes & examples</div>
-      <textarea class="unit-textarea" id="vocab-main-notes" placeholder="Example sentences, collocations, synonyms…" oninput="saveAll()" style="min-height:120px;"></textarea>
-    </div>
-
-    <div id="blocks-vocab-main" style="margin-top:1rem;"></div>
-    <div class="block-picker" id="blockpicker-vocab-main">
-      <button class="block-type-btn" onclick="addBlock('vocab-main','note')">📝 Note</button>
-      <button class="block-type-btn" onclick="addBlock('vocab-main','text')">📄 Text</button>
-      <button class="block-type-btn" onclick="addBlock('vocab-main','image')">🖼️ Image</button>
-      <button class="block-type-btn" onclick="addBlock('vocab-main','link')">🔗 Link</button>
-      <button class="block-type-btn" onclick="addBlock('vocab-main','task')">✅ Tasks</button>
-      <button class="block-type-btn" onclick="addBlock('vocab-main','vocab')">📋 Vocabulary</button>
-    </div>
-    <button class="btn-add-block" onclick="toggleBlockPicker('vocab-main')">＋ Add block</button>
-  </div>
-</div><!-- /tab-vocabulary -->
 
 <!-- ══════════════════════════════════════ -->
 <!-- MATERIALS TAB -->
