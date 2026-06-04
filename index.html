@@ -257,96 +257,35 @@ footer{text-align:center;padding:2rem;font-size:.7rem;color:#a89e94;letter-spaci
       <textarea class="global-notes-area" id="globalNotes" placeholder="General notes, reminders, anything…" oninput="saveAll()"></textarea>
     </div>
   </div>
-  <nav class="tab-nav" style="max-width:680px">
-    <button class="tab-btn active" data-tab="classwork">🖊 Classwork</button>
-    <button class="tab-btn" data-tab="homework">✏️ Homework</button>
-    <button class="tab-btn" data-tab="vocabulary">📖 Vocabulary</button>
-    <button class="tab-btn" data-tab="materials">📚 Materials</button>
+  <nav class="tab-nav" style="max-width:560px">
+    <button class="tab-btn active" data-tab="materials">📚 Materials</button>
+    <button class="tab-btn" data-tab="ielts-vocab">🗂️ IELTS Vocabulary</button>
+    <button class="tab-btn" data-tab="vocabulary">📖 My Vocabulary</button>
   </nav>
 </header>
 
-<!-- ══════════════════════════════════════ -->
-<!-- CLASSWORK TAB -->
-<!-- ══════════════════════════════════════ -->
-<div class="tab-page active" id="tab-classwork">
-  <div class="materials-page">
-    <div class="materials-header">
-      <h2>Our <span>Miro Board</span></h2>
-    </div>
 
-    <a href="https://miro.com/welcomeonboard/RzdSNGw1bnREY2g0YUU0OVVFSHFKalNySFZPWUt5c0dsamQ3WDZlc0JCN21kM2F4dnRBcGJ4RCtwdk4yUlRYemNxc3g1UmxmZGtjSUVHRTlGaXJmTlhrNVdaZFN4cnJ0THd4R1p2Qnh2M0pVK01zNXZqc0UvTGxzektmVlc4L2RyVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=396030250298"
-       target="_blank" rel="noopener"
-       style="display:block;text-decoration:none;color:inherit;">
-      <div style="background:linear-gradient(135deg,var(--ink) 0%,#2d231d 100%);color:var(--cream);border-radius:6px;padding:3rem 2rem;text-align:center;box-shadow:0 8px 28px var(--shadow);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden;cursor:pointer;"
-           onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 14px 36px var(--shadow)';"
-           onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 8px 28px var(--shadow)';">
-        <div style="position:absolute;top:-30px;right:-30px;width:160px;height:160px;border:2px solid var(--gold);border-radius:50%;opacity:.15;"></div>
-        <div style="position:absolute;bottom:-40px;left:-40px;width:120px;height:120px;border:2px solid var(--rose);border-radius:50%;opacity:.15;"></div>
-        <div style="font-size:3.5rem;margin-bottom:.8rem;animation:spin 30s linear infinite;display:inline-block;">🗂️</div>
-        <div style="font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;font-weight:500;">Interactive Whiteboard</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;margin-bottom:.6rem;line-height:1.1;">Open Our Miro Board</h3>
-        <p style="font-size:.92rem;color:#b0a89e;max-width:420px;margin:0 auto 1.5rem;line-height:1.6;">All our lesson notes, mind maps, exercises and shared work — in one collaborative space.</p>
-        <div style="display:inline-flex;align-items:center;gap:.5rem;background:var(--rose);color:white;padding:.85rem 1.8rem;border-radius:4px;font-size:.88rem;font-weight:500;letter-spacing:.04em;">
-          Open Miro Board <span style="font-size:1.1rem;">↗</span>
-        </div>
+
+<!-- ══════════════════════════════════════ -->
+<!-- IELTS VOCABULARY TAB -->
+<!-- ══════════════════════════════════════ -->
+<div class="tab-page" id="tab-ielts-vocab">
+  <div class="materials-page">
+    <div class="materials-header"><h2>IELTS <span>Vocabulary</span></h2></div>
+    <a class="card rose" href="https://drive.google.com/drive/folders/1Z9nNCXu6uJXhhjs2u_J3wDk-gxBiHZw5" target="_blank" rel="noopener"
+       style="display:flex;align-items:center;gap:1.2rem;text-decoration:none;color:inherit;background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:1.4rem 1.8rem;margin-bottom:1rem;box-shadow:0 2px 10px var(--shadow);transition:transform .2s,box-shadow .2s;"
+       onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 24px var(--shadow)'"
+       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 10px var(--shadow)'">
+      <span style="font-size:2.4rem;">🗂️</span>
+      <div>
+        <div style="font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);margin-bottom:.3rem;">Google Drive Folder</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:.3rem;">IELTS Vocabulary</h3>
+        <p style="font-size:.82rem;color:var(--muted);line-height:1.5;margin:0;">Vocabulary sheets, word lists, and reference files for your IELTS preparation.</p>
       </div>
+      <span style="margin-left:auto;font-size:1.1rem;color:var(--rose);">→</span>
     </a>
-
-    <div style="background:var(--paper);border:1px solid var(--border);border-radius:5px;padding:1rem 1.4rem;margin-top:1.2rem;display:flex;align-items:flex-start;gap:.7rem;">
-      <span style="font-size:1.1rem;">💡</span>
-      <p style="font-size:.82rem;color:var(--muted);line-height:1.6;margin:0;">
-        <strong style="color:var(--ink);">Tip:</strong> Click the box above to open Miro in a new tab. The first time you open it, sign in with the same email you use for our lessons — you'll automatically join the board with editing access.
-      </p>
-    </div>
   </div>
-</div><!-- /tab-classwork -->
-
-<!-- ══════════════════════════════════════ -->
-<!-- HOMEWORK TAB -->
-<!-- ══════════════════════════════════════ -->
-<div class="tab-page" id="tab-homework">
-  <div class="materials-page">
-    <div class="materials-header">
-      <h2>My <span>Homework</span></h2>
-    </div>
-
-    <div style="background:var(--paper);border:1px solid var(--border);border-radius:5px;padding:1.4rem 1.5rem;margin-bottom:1rem;">
-      <div class="unit-notes-label" style="margin-bottom:.5rem">📝 Homework notes</div>
-      <textarea class="unit-textarea" id="hw-main-notes" placeholder="Write down your homework here…" oninput="saveAll()" style="min-height:120px;"></textarea>
-    </div>
-
-    <div style="background:var(--paper);border:1px solid var(--border);border-radius:5px;padding:1.4rem 1.5rem;margin-bottom:1rem;">
-      <div class="unit-notes-label" style="margin-bottom:.5rem">✅ Tasks to do</div>
-      <ul class="simple-hw-list" id="hw-main-list"></ul>
-      <button class="btn-add-hw" onclick="showHwForm('hw-main')">＋ Add task</button>
-      <div class="add-hw-form" id="hwform-hw-main">
-        <div class="form-row">
-          <input type="text" class="inp-main" placeholder="Task description (e.g. Unit 3 ex. 5)" id="hwtxt-hw-main">
-          <input type="text" class="inp-pages" placeholder="Pages" id="hwpages-hw-main">
-        </div>
-        <div class="form-row">
-          <input type="url" class="inp-url" placeholder="https://... (optional)" id="hwurl-hw-main">
-        </div>
-        <div class="form-actions">
-          <button class="btn-save-hw" onclick="saveHwTask('hw-main','hw-main-list')">Save</button>
-          <button class="btn-cancel-hw" onclick="hideHwForm('hw-main')">Cancel</button>
-        </div>
-      </div>
-    </div>
-
-    <div id="blocks-hw-main" style="margin-top:1rem;"></div>
-    <div class="block-picker" id="blockpicker-hw-main">
-      <button class="block-type-btn" onclick="addBlock('hw-main','note')">📝 Note</button>
-      <button class="block-type-btn" onclick="addBlock('hw-main','text')">📄 Text</button>
-      <button class="block-type-btn" onclick="addBlock('hw-main','image')">🖼️ Image</button>
-      <button class="block-type-btn" onclick="addBlock('hw-main','link')">🔗 Link</button>
-      <button class="block-type-btn" onclick="addBlock('hw-main','task')">✅ Tasks</button>
-      <button class="block-type-btn" onclick="addBlock('hw-main','vocab')">📋 Vocabulary</button>
-    </div>
-    <button class="btn-add-block" onclick="toggleBlockPicker('hw-main')">＋ Add block</button>
-  </div>
-</div><!-- /tab-homework -->
-
+</div><!-- /tab-ielts-vocab -->
 
 <!-- ══════════════════════════════════════ -->
 <!-- VOCABULARY TAB -->
@@ -395,7 +334,7 @@ footer{text-align:center;padding:2rem;font-size:.7rem;color:#a89e94;letter-spaci
 <!-- ══════════════════════════════════════ -->
 <!-- MATERIALS TAB -->
 <!-- ══════════════════════════════════════ -->
-<div class="tab-page" id="tab-materials">
+<div class="tab-page active" id="tab-materials">
   <div class="materials-page">
     <div class="materials-header"><h2>Course <span>Materials</span></h2></div>
     <div class="grid" id="cardGrid">
